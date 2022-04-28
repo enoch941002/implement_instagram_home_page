@@ -4,20 +4,18 @@ export const DELETE_NEWS = 'DELETE_NEWS';
 export const addNewsDynamic = (info) => ({
     type: ADD_NEWS_DYNAMIC,
     payload: {
-        key: info.key,
-        text: info.text,
+        ...info
     }
 })
 export const updateNewsState = (info) => ({
     type: UPDATE_NEWS_STATE,
     payload: {
-        key: info.key,
-        read: info.read,
+        ...info
     }
 })
 export const deleteNews = (info) => ({
     type: DELETE_NEWS,
     payload: {
-        key: info.key,
+        ...info
     }
 })

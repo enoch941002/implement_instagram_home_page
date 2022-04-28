@@ -1,0 +1,74 @@
+.posts{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.posts header{
+    margin: 8px;
+}
+article .background{
+    height: 600px;
+}
+article .author{
+    font-size: 14px;
+    font-weight: bold;
+}
+article .located{
+    font-size: 12px;
+    color: rgb(142, 142, 142);
+}
+article .desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+    padding-left: 10px;
+}
+.interactive{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.interactive .content{
+    display: flex;
+}
+.interactive .content .desc{
+    margin: 0;
+}
+.interactive .times{
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+}
+.interactive .comment_area{
+    height: 30px;
+    margin-top: 10px;
+}
+.interactive .comment_area .comment_input{
+    border: none;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.comment_input:focus{
+    outline-width: 0;
+}
+
+.posts_session{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 24px);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.posts_session button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding-left: 0;
+}
+.posts_session button svg{
+    color: rgb(38, 38, 38);
+    fill: rgb(38, 38, 38);
+}
+.posts_session button svg:hover{
+    color: rgb(142, 142, 142);
+    fill: rgb(142, 142, 142);
+}

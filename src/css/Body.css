@@ -1,23 +1,26 @@
-section{
+.news_session {
     width: 975px;
     padding-top: 30px;
     margin: 0 auto;
 }
-section #news{
-    width: calc(70% - 28px);
-    background-color: white;
+
+.news_session #news {
+    width: 460px;
 }
-section #news_feed{
+
+.news_session #news_feed {
     padding: 16px 0;
-    border: 1px solid rgba(var(--b6a,219,219,219),1);
-    border-radius: 3px;
+    border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+    border-radius: 10px;
     margin-bottom: 24px;
     position: relative;
     display: flex;
     height: 85px;
     overflow: hidden;
+    background-color: white;
 }
-section #news_feed .dynamicItems{
+
+.news_session #news_feed .dynamicItems {
     height: 56px;
     min-width: 56px;
     width: 56px;
@@ -27,15 +30,18 @@ section #news_feed .dynamicItems{
     border: 2px solid red;
     cursor: pointer;
 }
-section #news_feed .dynamicItems:not(:first-child){
+
+.news_session #news_feed .dynamicItems:not(:first-child) {
     margin-left: 16px;
-  }
-section #news_feed .dynamicItems .photoBackground{
+}
+
+.news_session #news_feed .dynamicItems .photoBackground {
     border-radius: 50%;
     height: 100%;
     background-color: green;
 }
-section #news_feed .dynamicItems .photoFont{
+
+.news_session #news_feed .dynamicItems .photoFont {
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;

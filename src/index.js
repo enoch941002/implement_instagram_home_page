@@ -40,7 +40,7 @@ const Hat = () => {
       <div id='hat'>
         <Logo />
         <div id='search'>
-          <input type='text' placeholder='搜尋' value={posts}
+          <input type='text' placeholder='輸入產生一個限時動態' value={posts}
             onChange={(e) => { setPosts(e.target.value) }}
             onKeyPress={handleClick}></input>
         </div>
@@ -72,7 +72,7 @@ const TableList = () => {
 };
 
 const TodoListPage = () => (
-  <div>
+  <div style={{display:'none'}}>
     <table>
       <thead>
         <tr>
@@ -96,7 +96,7 @@ const Main = () => {
       <Hat />
       <Body />
       <Block />
-      {/* <div>
+      <div style={{display:'none'}}>
         <input value={firstName} onChange={(e) => { setFirstName(e.target.value); }} />
         <input value={lastName} onChange={(e) => { setLastName(e.target.value); }} />
         <button type="button" onClick={() => {
@@ -109,7 +109,7 @@ const Main = () => {
           新增
         </button>
       </div>
-      <TodoListPage /> */}
+      <TodoListPage />
     </div>
   );
 };
