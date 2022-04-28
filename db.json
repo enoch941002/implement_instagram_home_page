@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author":"enoch",
+      "title": "json-server",
+      "postid": 1
+    },
+    {
+      "id": 2,
+      "author":"enoch2",
+      "title": "json-server",
+      "postid": 2
+    }
+  ]
+}
