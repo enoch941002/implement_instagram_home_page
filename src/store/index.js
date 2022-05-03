@@ -1,16 +1,12 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
 import logger from 'redux-logger';
-import tableReducer from '../reducer/tableinfo';
-import newsDynamicReducer from '../reducer/news_dynamic';
-import postsReducer from '../reducer/posts';
 
-const rootReducer = combineReducers({
-    tableReducer,
-    postsReducer,
-    newsDynamicReducer
+import { configureStore } from '@reduxjs/toolkit'
+import newsDynamicReducer from 'features/newsDynamic/newsDynamicSlice'
+import postsReducer from 'features/posts/postsSlice'
+export const store = configureStore({
+    reducer: {
+        news:newsDynamicReducer,
+        posts:postsReducer
+    },
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 })
-const store = createStore(
-    rootReducer, applyMiddleware(logger)
-);
-
-export default store;
